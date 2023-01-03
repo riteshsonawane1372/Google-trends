@@ -24,7 +24,7 @@ jobs:
     - name: Anchore SBOM Action
       uses: anchore/sbom-action@v0.13.1
       with:
-        file: ./go.mod
+        path: ./
 
     - name: Build
       run: go build -v ./...
